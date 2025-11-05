@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    background-color: aliceblue;
+    width: 70vw;
+    height: 90vh;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.container_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(253, 2, 2, 0.986);
+    height: 100%;
+    width: 40%;
+    margin-left: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.img_pedro_augusto{
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    margin-top: 30%;
+    box-shadow: 0 0 15px 10px rgb(255, 0, 0);
+}
+
+.btn_social{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 15%;
+    margin: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.btn_social:hover {
+    width: 51px;
+    height: 51px;
+    border-radius: 15%;
+    margin: 9px;
+    margin-top: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_download_cv{
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+.btn-rede {
+    text-decoration: none;
+}
+
+.section_projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 100%;
+    width: 60%;
+    margin-right: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.title_projects {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav_projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.project_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.btn_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 20vh;
+    margin: 10px;
+    
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    text-decoration: none;
+}
+
+.btn_project:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.card-flip {
+    perspective: 1000px; 
+    transform-style: preserve-3d;
+    position: relative; 
+    
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+}
+
+.card-flip:hover {
+    background-color: transparent;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; 
+    transform-style: preserve-3d; 
+}
+
+
+.card-flip:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    backface-visibility: hidden; 
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.img_project_preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    
+    text-align: center; 
+    
+    line-height: 20vh; 
+}
+
+.img_project {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
