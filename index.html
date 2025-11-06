@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Augusto</title>
+    <title>Pedro Augusto - Web Developer</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -12,107 +12,154 @@
 <body>
     <main class="main">
         <section class="section_profile container_1">
-            <img src="./img/perfil/img1.jpg" alt="img-pedro-augusto" class="img_pedro_augusto">
-            <nav class="nav_buttons">
+            <h1 class="name-profile">Pedro Augusto</h1>
+            <h2 class="role">Web Developer</h2>
+            <img src="./img/perfil/img1.jpg" alt="Foto de perfil de Pedro Augusto, desenvolvedor web."
+                class="img_pedro_augusto">
+            <nav class="nav_buttons" aria-label="Links de Redes Sociais">
                 <a class="btn-rede btn_instagram" href="https://www.instagram.com/pedrocahhh/" target="_blank">
-                    <img src="./img/buttons/inst.jpg" alt="Instagram" class="btn_social">
+                    <img src="./img/buttons/inst.jpg" alt="Ícone do Instagram" class="btn_social">
                 </a>
                 <a class="btn-rede btn_github" href="https://github.com/Pedrocs-Aug" target="_blank">
-                    <img src="./img/buttons/git.jpg" alt="GitHub" class="btn_social">
+                    <img src="./img/buttons/git.jpg" alt="Ícone do GitHub" class="btn_social">
                 </a>
-                <a class="btn-rede btn_facebook" href="https://www.facebook.com/pedroaugustooo/" target="_blank">
-                    <img src="./img/buttons/face.jpg" alt="Facebook" class="btn_social">
-                </a>
-                <a class="btn-rede btn_linkedin" href="https://www.linkedin.com/in/pedro-augusto-b8a30514b/"
+                <a class="btn-rede btn_linkedin" href="https://www.linkedin.com/in/seu-perfil-linkedin/"
                     target="_blank">
-                    <img src="./img/buttons/linked.jpg" alt="LinkedIn" class="btn_social">
+                    <img src="./img/buttons/linked.jpg" alt="Ícone do LinkedIn" class="btn_social">
+                </a>
+                <a class="btn-rede btn_whatsapp"
+                    href="https://api.whatsapp.com/send/?phone=5511982384937&text=Olá!&type=phone_number&app_absent=0"
+                    target="_blank">
+                    <img src="./img/buttons/what.jpg" alt="Ícone do WhatsApp" class="btn_social">
                 </a>
             </nav>
-            <a class="nav_download">
-                <button class="btn_download_cv" download>download cv</button>
+            <a class="btn_download_cv" href="./cv/Pedro_Augusto_de_Sousa.docx" download="Curriculo-Pedro-Augusto">
+                <button class="btn_download_cv_button">DOWNLOAD CV</button>
             </a>
         </section>
+
         <section class="section_projects container_2">
-            <h2 class="title_projects">projects</h2>
-            <nav class="nav_projects">
-                <div class="project_group">
-                    
-                    <a class="card-flip btn_project project-1" href="https://pedrocs-aug.github.io/Calculadora/" target="_blank">
-                        <div class="flipper">
-                            <div class="card-face front">
-                                <img src="./img/img_projetos/html_calc.JPG" alt="Visualização do Projeto Calculadora"
-                                    class="img_project_preview">
-                            </div>
-                            <div class="card-face back">
-                                <img src="./img/img_projetos/cod_calc.JPG" alt="Código do Projeto Calculadora"
-                                    class="img_project_preview">
-                            </div>
-                        </div>
-                    </a>
-                    
-                    <a class="card-flip btn_project project-1" href="https://pedrocs-aug.github.io/S-24_T-4-/" target="_blank">
-                        <div class="flipper">
-                            <div class="card-face front">
-                                <img src="./img/img_projetos/html_rec.JPG" alt="Visualização do Projeto Recriador"
-                                    class="img_project_preview">
-                            </div>
-                            <div class="card-face back">
-                                <img src="./img/img_projetos/cod_rec.JPG" alt="Código do Projeto Recriador"
-                                    class="img_project_preview">
+            <h2 class="section_title">Meus Projetos</h2>
+            <nav class="nav_projects" aria-label="Navegação por projetos">
+                <ul class="project_group">
+                    <li class="project-item">
+                        <div class="card-flip btn_project">
+                            <div class="flipper">
+                                <div class="card-face front">
+                                    <img src="./img/img_projetos/html_alg.JPG"
+                                        alt="Visualização da página inicial do Projeto Alugames."
+                                        class="img_project_preview">
+                                </div>
+                                <div class="card-face back">
+                                    <img src="./img/img_projetos/cod_alg.JPG" alt="Código HTML/CSS do Projeto Alugames."
+                                        class="img_project_preview">
+                                </div>
                             </div>
                         </div>
-                    </a>
-                    <a class="card-flip btn_project project-1" href="https://pedrocs-aug.github.io/Carrinho-compras/" target="_blank">
-                        <div class="flipper">
-                            <div class="card-face front">
-                                <img src="./img/img_projetos/html_comp.JPG" alt="Visualização do Projeto Compositor"
-                                    class="img_project_preview">
-                            </div>
-                            <div class="card-face back">
-                                <img src="./img/img_projetos/cod_comp.JPG" alt="Código do Projeto Compositor"
-                                    class="img_project_preview">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project_group">
-                    <a class="card-flip btn_project project-1" href="https://pedrocs-aug.github.io/Amigo-secreto/" target="_blank">
-                        <div class="flipper">
-                            <div class="card-face front">
-                                <img src="./img/img_projetos/html_amg.JPG" alt="Visualização do Projeto Amigável"
-                                    class="img_project_preview">
-                            </div>
-                            <div class="card-face back">
-                                <img src="./img/img_projetos/cod_amg.JPG" alt="Código do Projeto Amigável"
-                                    class="img_project_preview">
+                        <div class="project-description">
+                            <h3>Alugames (HTML & CSS)</h3>
+                            <p>Landing page para aluguel de jogos. Demonstra habilidades em layout, responsividade e
+                                design moderno.</p>
+                            <p class="project-techs">Tecnologias: HTML5, CSS3.</p>
+
+                            <div class="project-buttons">
+                                <a href="https://pedrocs-aug.github.io/Alugames/#" target="_blank"
+                                    class="btn-project-link deploy">Visualizar</a>
+                                <a href="https://github.com/Pedrocs-Aug/Alugames" target="_blank"
+                                    class="btn-project-link code">Código</a>
                             </div>
                         </div>
-                    </a>
-                    <a class="card-flip btn_project project-1" href="https://pedrocs-aug.github.io/Alugames/#" target="_blank">
-                        <div class="flipper">
-                            <div class="card-face front">
-                                <img src="./img/img_projetos/html_alg.JPG" alt="Visualização do Projeto Aluguel"
-                                    class="img_project_preview">
-                            </div>
-                            <div class="card-face back">
-                                <img src="./img/img_projetos/cod_alg.JPG" alt="Código do Projeto Aluguel"
-                                    class="img_project_preview">
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card-flip btn_project project-1" href="https://pedrocs-aug.github.io/Alugames/#" target="_blank">
-                        <div class="flipper">
-                            <div class="card-face front">
-                                <img src="./img/img_projetos/html_inter.JPG" alt="Visualização do Projeto Interativo"
-                                    class="img_project_preview">
-                            </div>
-                            <div class="card-face back">
-                                <img src="./img/img_projetos/cod_inter.JPG" alt="Código do Projeto Interativo"
-                                    class="img_project_preview">
+                    </li>
+
+                    <li class="project-item">
+                        <div class="card-flip btn_project">
+                            <div class="flipper">
+                                <div class="card-face front">
+                                    <img src="./img/img_projetos/html_inter.JPG"
+                                        alt="Visualização da página inicial do Projeto Interativo."
+                                        class="img_project_preview">
+                                </div>
+                                <div class="card-face back">
+                                    <img src="./img/img_projetos/cod_inter.JPG"
+                                        alt="Código JavaScript do Projeto Interativo, focado na lógica de interação."
+                                        class="img_project_preview">
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
+                        <div class="project-description">
+                            <h3>Sistema Interativo (JS)</h3>
+                            <p>Aplicação com lógica complexa para cálculo ou interação dinâmica. Destaca o domínio em
+                                JavaScript e manipulação do DOM.</p>
+                            <p class="project-techs">Tecnologias: JavaScript ES6+, HTML5, CSS3.</p>
+                            <div class="project-buttons">
+                                <a href="https://pedrocs-aug.github.io/seu-projeto-interativo/" target="_blank"
+                                    class="btn-project-link deploy">Visualizar</a>
+                                <a href="https://github.com/Pedrocs-Aug/seu-projeto-interativo" target="_blank"
+                                    class="btn-project-link code">Código</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="project_group">
+                    <li class="project-item">
+                        <div class="card-flip btn_project">
+                            <div class="flipper">
+                                <div class="card-face front">
+                                    <img src="./img/img_projetos/html_calc.JPG"
+                                        alt="Visualização da página de uma calculadora web."
+                                        class="img_project_preview">
+                                </div>
+                                <div class="card-face back">
+                                    <img src="./img/img_projetos/cod_alg.JPG"
+                                        alt="Código JavaScript do Projeto Calculadora." class="img_project_preview">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Calculadora (JS)</h3>
+                            <p>Uma calculadora funcional construída com JavaScript puro, demonstrando lógica e
+                                manipulação de eventos.</p>
+                            <p class="project-techs">Tecnologias: HTML5, CSS3, JavaScript.</p>
+                            <div class="project-buttons">
+                                <a href="https://pedrocs-aug.github.io/seu-projeto-calculadora/" target="_blank"
+                                    class="btn-project-link deploy">Visualizar</a>
+                                <a href="https://github.com/Pedrocs-Aug/seu-projeto-calculadora" target="_blank"
+                                    class="btn-project-link code">Código</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="project-item">
+                        <div class="card-flip btn_project">
+                            <div class="flipper">
+                                <div class="card-face front">
+                                    <img src="./img/img_projetos/html_inter.JPG"
+                                        alt="Visualização da página inicial de uma Landing Page responsiva."
+                                        class="img_project_preview">
+                                </div>
+                                <div class="card-face back">
+                                    <img src="./img/img_projetos/cod_inter.JPG"
+                                        alt="Código HTML/CSS de uma Landing Page com Design responsivo."
+                                        class="img_project_preview">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Landing Page (HTML/CSS)</h3>
+                            <p>Design de uma landing page moderna e totalmente responsiva, focada na conversão e
+                                experiência do usuário.</p>
+                            <p class="project-techs">Tecnologias: HTML5, CSS Flexbox/Grid.</p>
+                            <div class="project-buttons">
+                                <a href="https://pedrocs-aug.github.io/sua-landing-page/" target="_blank"
+                                    class="btn-project-link deploy">Visualizar</a>
+                                <a href="https://github.com/Pedrocs-Aug/sua-landing-page" target="_blank"
+                                    class="btn-project-link code">Código</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
             </nav>
         </section>
     </main>
