@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Redefinido no reset.css, mas mantido para consistência */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,6 @@
     font-family: 'Overpass', sans-serif;
 }
 
-/* O body permanece black, mantendo o fundo escuro da tela */
 body {
     display: flex;
     flex-direction: column;
@@ -19,8 +17,7 @@ body {
 
 main {
     display: flex;
-    /* O main pode ter um fundo suave, mas vamos usar a cor do container_2 para que o "bloco" pareça uniforme */
-    background-color: #F8F8FF; /* Branco Suave */
+    background-color: #F8F8FF; 
     width: 70vw;
     height: 90vh;
     border-radius: 15px;
@@ -28,12 +25,10 @@ main {
     transition: all 0.5s ease; 
 }
 
-/* -------------------- SEÇÃO PERFIL (ESQUERDA) - PRETO -------------------- */
 .container_1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* COR PRINCIPAL: Preto */
     background-color: #1A1A1A; 
     height: 100%;
     width: 40%;
@@ -54,7 +49,7 @@ main {
 .role {
     font-size: 18px;
     margin-top: 5px;
-    color: #CCCCCC; /* Cinza claro para o papel */
+    color: #CCCCCC; 
 }
 
 .img_pedro_augusto {
@@ -64,7 +59,6 @@ main {
     max-height: 250px;
     border-radius: 50%;
     margin-top: 40px;
-    /* Borda DOURADA para destaque */
     border: 5px solid #FFD700; 
     object-fit: cover;
 }
@@ -100,9 +94,7 @@ main {
     margin-top: 50px;
     padding: 10px 20px;
     background-color: transparent;
-    /* Borda DOURADA */
     border: 2px solid #FFD700;
-    /* Texto DOURADO */
     color: #FFD700; 
     text-transform: uppercase;
     font-weight: bold;
@@ -111,12 +103,10 @@ main {
 }
 
 .btn_download_cv_button:hover {
-    /* HOVER: Fundo DOURADO, Texto Preto */
     background-color: #FFD700;
     color: #1A1A1A; 
 }
 
-/* -------------------- SEÇÃO PROJETOS (DIREITA) - BRANCO SUAVE -------------------- */
 .container_2 {
     display: flex;
     flex-direction: column;
@@ -127,7 +117,6 @@ main {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     overflow-y: auto; 
-    /* Fundo Claro */
     background-color: #343436; 
 }
 
@@ -135,7 +124,6 @@ main {
     font-size: 28px;
     text-transform: uppercase;
     font-weight: bold;
-    /* COR DE DESTAQUE: Amarelo Dourado */
     color: #FFD700; 
     margin-bottom: 20px;
 }
@@ -163,7 +151,6 @@ main {
     height: 100%; 
     width: 45%; 
     min-width: 250px; 
-    /* Fundo sutil mais escuro que o background geral */
     background-color: #ededed67; 
     border-radius: 10px;
     padding: 15px;
@@ -185,25 +172,21 @@ main {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
-    /* COR DE DESTAQUE: Amarelo Dourado */
     color: #FFD700; 
 }
 
 .project-description p {
     font-size: 14px;
     margin-bottom: 5px;
-    /* Texto principal escuro */
     color: #333333; 
     height: 40%;
 }
 
 .project-techs {
-    /* COR DO SUDESTAQUE: Cinza escuro */
     color: #f8f3f3 !important; 
     font-style: italic;
 }
 
-/* -------------------- EFEITO CARD FLIP -------------------- */
 .card-flip {
     perspective: 1000px;
     width: 100%;
@@ -260,8 +243,6 @@ main {
     display: block;
 }
 
-/* -------------------- ESTILOS DOS NOVOS BOTÕES DE PROJETO -------------------- */
-
 .project-buttons {
     display: flex;
     gap: 10px;
@@ -284,11 +265,8 @@ main {
     white-space: nowrap; 
 }
 
-/* Estilo para o botão Visualizar (Deploy) */
 .btn-project-link.deploy {
-    /* COR PRINCIPAL: Amarelo Dourado */
     background-color: #FFD700; 
-    /* Texto Preto */
     color: #1A1A1A;
     border: 1px solid #FFD700;
 }
@@ -299,26 +277,18 @@ main {
     border-color: #FFD700;
 }
 
-/* Estilo para o botão Código (GitHub) */
 .btn-project-link.code {
     background-color: transparent;
-    /* Texto Escuro */
     color: #333333; 
     border: 1px solid #333333;
 }
 
 .btn-project-link.code:hover {
-    /* HOVER: Fundo Escuro, Texto Branco */
     background-color: #333333; 
     color: white; 
     border-color: #333333;
 }
 
-/* ============================================== */
-/* ================= MEDIA QUERIES ================ */
-/* ============================================== */
-
-/* (As Media Queries não precisam de alteração de cor, mas são incluídas para o código completo) */
 @media (max-width: 1024px) {
     main {
         flex-direction: column; 
@@ -408,34 +378,21 @@ main {
     }
 }
 
-/* ============================================== */
-/* ============= SCROLLBAR STYLING ============== */
-/* (Funciona em navegadores Webkit: Chrome, Safari, Edge) */
-/* ============================================== */
-
-/* 1. Largura da barra de rolagem */
 .container_2::-webkit-scrollbar {
     width: 8px;
 }
 
-/* 2. Fundo (Pista) da barra de rolagem */
 .container_2::-webkit-scrollbar-track {
-    /* Cinza escuro, quase preto, para combinar com o container_2 */
     background: #333333; 
     border-radius: 10px;
 }
 
-/* 3. A alça (o elemento que você arrasta) */
 .container_2::-webkit-scrollbar-thumb {
-    /* Cor Dourada (Amarelo Dourado Brilhante) */
     background-color: #FFD700; 
     border-radius: 10px;
-    /* Adiciona uma pequena borda para destacar a alça */
     border: 1px solid #FFD700;
 }
 
-/* 4. Estilo ao passar o mouse (opcional) */
 .container_2::-webkit-scrollbar-thumb:hover {
-    /* Um tom um pouco mais escuro de dourado ao passar o mouse */
     background-color: #CCAA00; 
 }
